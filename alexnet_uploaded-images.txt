@@ -1,0 +1,98 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+Filename= Basenji_02.jpg    Pet label= basenji
+Filename= Penguin_01.jpg    Pet label= penguin
+Filename= Basenji_01.jpg    Pet label= basenji
+Filename= Nail_01.jpg    Pet label= nail
+Filename= Kangal_Shepherd_Dog_04.jpg    Pet label= kangal shepherd dog
+Filename= Kangal_Shepherd_Dog_03.jpg    Pet label= kangal shepherd dog
+
+Pet Image Label Dictionary has 6 key-value pairs.
+Below are 6 of them:
+ 1 key:                 Basenji_02.jpg  label:                    basenji
+ 2 key:                 Penguin_01.jpg  label:                    penguin
+ 3 key:                 Basenji_01.jpg  label:                    basenji
+ 4 key:                    Nail_01.jpg  label:                       nail
+ 5 key:     Kangal_Shepherd_Dog_04.jpg  label:        kangal shepherd dog
+ 6 key:     Kangal_Shepherd_Dog_03.jpg  label:        kangal shepherd dog
+
+     MATCH:
+
+                Basenji_02.jpg: 
+Real:                    basenji   Classifier:                        basenji
+
+                Penguin_01.jpg: 
+Real:                    penguin   Classifier: king penguin, aptenodytes patagonica
+
+                Basenji_01.jpg: 
+Real:                    basenji   Classifier:                        basenji
+
+                   Nail_01.jpg: 
+Real:                       nail   Classifier:                           nail
+
+ NOT A MATCH:
+
+    Kangal_Shepherd_Dog_04.jpg: 
+Real:        kangal shepherd dog   Classifier:                   bull mastiff
+
+    Kangal_Shepherd_Dog_03.jpg: 
+Real:        kangal shepherd dog   Classifier:                   bull mastiff
+
+# Total Images 6 # Matches: 4 # NOT Matches: 2
+
+     MATCH:
+
+                Basenji_02.jpg: 
+Real:                    basenji   Classifier:                        basenji  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                Penguin_01.jpg: 
+Real:                    penguin   Classifier: king penguin, aptenodytes patagonica  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                Basenji_01.jpg: 
+Real:                    basenji   Classifier:                        basenji  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                   Nail_01.jpg: 
+Real:                       nail   Classifier:                           nail  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+    Kangal_Shepherd_Dog_04.jpg: 
+Real:        kangal shepherd dog   Classifier:                   bull mastiff  
+PetLabelDog: 0  ClassLabelDog: 1
+
+    Kangal_Shepherd_Dog_03.jpg: 
+Real:        kangal shepherd dog   Classifier:                   bull mastiff  
+PetLabelDog: 0  ClassLabelDog: 1
+
+# Total Images 6 # Matches: 4 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  6  N Dog Images:  2  N NotDog Images:  4 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  6  N Dog Images:  2  N NotDog Images:  4 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   6
+N Dog Images        :   2
+N Not-Dog Images    :   4
+ 
+pct_match: 66.66666666666666
+pct_correct_dogs: 100.0
+pct_correct_breed: 100.0
+pct_correct_notdogs: 50.0
+
+INCORRECT Dog/NOT Dog Assignments:
+Real:        kangal shepherd dog   Classifier:                   bull mastiff
+Real:        kangal shepherd dog   Classifier:                   bull mastiff
+
+** Total Elapsed Runtime: 0:0:1
